@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Question from "../Question/question";
 
+
 export default function Landing() {
     return (
         <div className="min-h-screen flex flex-col">
