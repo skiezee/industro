@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Question from "../Question";
+import Question, { QuestionType } from "../Question";
 
 
 export default function Landing() {
