@@ -43,7 +43,7 @@ const Sidebar = () => {
       </nav>
       <div>
         <Link href="/logout" className="flex items-center p-2 rounded text-red-600 hover:bg-gray-200">
-          <Image src="/images/logout-icon.png" alt="Logout" width={24} height={24} className="mr-2" />
+          <Image src="/logout.svg" alt="Logout" width={24} height={24} className="mr-2" />
           Logout
         </Link>
       </div>

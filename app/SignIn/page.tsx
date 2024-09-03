@@ -1,10 +1,19 @@
 'use client'
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaUser, FaLock } from 'react-icons/fa';
 
 export default function SignIn() {
+    const [isMounted, setIsMounted] = useState(false);
 
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!isMounted) {
+        return null; // Prevents rendering until after the component is mounted on the client
+    }
 
     return (
         <div className="flex min-h-screen bg-yellow-50">
@@ -16,6 +25,7 @@ export default function SignIn() {
                         height={80}
                         className="mx-auto rounded-full"
                         alt="User Avatar"
+                        priority
                     />
                     <h2 className="text-pink-500 text-lg font-bold mt-4">Game-changer for our team!</h2>
                     <p className="text-gray-600 mt-2">
@@ -59,7 +69,6 @@ export default function SignIn() {
                         </div>
 
                         <Link href="/Dashboard">
-
                             <button
                                 type='submit'
                                 className="w-full py-2 px-4 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300"

@@ -1,5 +1,7 @@
+"use client"
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
+import Image from "next/image";
 
 export type QuestionType = {
   className?: string;
@@ -50,12 +52,17 @@ const Question: NextPage<QuestionType> = ({
           {title}
         </b>
       </div>
-      <img
-        className="h-8 w-8 relative z-[1]"
-        loading="lazy"
-        alt=""
-        src={closedQuestion}
-      />
+      {closedQuestion && (
+        <Image
+          className="h-8 w-8 relative z-[1]"
+          loading="lazy"
+          alt=""
+          src={closedQuestion}
+          width={32}
+          height={32}
+        />
+      )}
+
     </div>
   );
 };

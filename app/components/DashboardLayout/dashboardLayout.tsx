@@ -1,3 +1,4 @@
+"use client"
 import Sidebar from '../Sidebar/sidebar';
 import Navbar from '../Navbar/navbar';
 import { LayoutProps } from '@/.next/types/app/layout';
