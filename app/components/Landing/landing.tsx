@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Question from "../Question/question";
+import Question from "../Question";
 
 
 export default function Landing() {
