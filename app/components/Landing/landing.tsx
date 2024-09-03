@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import MasterPrimaryButton from "../Primary-button/masterButton";
-import Question from "../question/question";
+import Question from "../Question/question";
 
 export default function Landing() {
     return (
@@ -308,7 +308,7 @@ export default function Landing() {
                 </div>
             </div>
 
-            
+
             <footer className="bg-white text-gray-400 py-6 mt-24">
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                     <p className="text-center md:text-left text-sm mb-4 md:mb-0">

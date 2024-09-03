@@ -63,9 +63,11 @@ const Navbar = () => {
                             <a href="/" className="block py-2 px-3 md:p-0 text-[#4D4D4D] text-[18px] flex items-center h-full">Contacts</a>
                         </li>
                         <li>
-                            <button className="bg-[#ED4F81] hover:bg-[#ED4F8180] px-3 py-2 text-white text-[16px] rounded-full flex items-center">
-                                Get Started
-                            </button>
+                            <a href="/SignIn">
+                                <button className="bg-[#ED4F81] hover:bg-[#ED4F8180] px-3 py-2 text-white text-[16px] rounded-full flex items-center">
+                                    Get Started
+                                </button>
+                            </a>
                         </li>
 
                     </ul>
