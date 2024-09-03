@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import MasterPrimaryButton from "../Primary-button/masterButton";
 import Question from "../Question/question";
 
 export default function Landing() {
