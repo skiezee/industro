@@ -34,7 +34,7 @@ const RecentApplication = () => {
     ];
 
     return (
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-2XL shadow-md">
             <h2 className="text-lg font-semibold mb-4">Recent Application</h2>
             <div className="space-y-4">
                 {applications.map((app, index) => (

@@ -20,10 +20,11 @@ export default function Dashboard() {
           <h2 className="text-lg font-semibold mb-4">Activity analytics</h2>
           <ActivityChart />
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-2XL shadow-md">
           <h2 className="text-lg font-semibold mb-4">Job apply analytics</h2>
           <JobApplyChart />
         </div>
+      
         <RecentApplication />
       </div>
     </DashboardLayout>
